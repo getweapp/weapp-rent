@@ -1,0 +1,35 @@
+<image class="topImg" src="{{imgbx.topImg}}"></image>
+<view class="content">
+
+    <view class="tips">
+        <text>说出你的要求，小仙帮你找美房~</text>
+    </view>
+
+    <image class="titImg" src="{{imgbx.titImg}}"></image>
+
+    <view>
+        <view class="session">
+            <view class="sessoin-tit">当前月薪</view>
+            <input class="session-val" type="number" name="currentSalary" bindchange="bindchangeInput" id="currentSalary" />
+        </view>
+        
+        <view class="session">
+            <view class="sessoin-tit">期待户型</view>
+            <picker  id="houseType" class="session-picker"  bindchange="bindPickerChange" value="{{houseTypeIndex}}" range="{{houseType}}">
+                <view class="picker">
+                  {{houseType[houseTypeIndex]}}
+                </view>
+            </picker>
+        </view>
+
+        <view class="session">
+            <view class="sessoin-tit"  >工作地标</view>
+            <input class="session-val" name="workPalce"  id="workPalce" bindchange="bindchangeInput" value="徐家汇" disabled="true" />
+        </view>
+        
+        <button class="myBtn" bindtap="findHouse">快速速帮我找美房</button>
+
+    </view>
+
+</view>
+<image class="bomImg" src="{{imgbx.bomImg}}"></image>

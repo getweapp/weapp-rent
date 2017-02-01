@@ -1,0 +1,57 @@
+<view class="pages4 pageContent  {{displayStyle[3]}}"  >
+    <map class="maps" id="map2" longitude="{{globDatas.around.longitude}}" latitude="{{globDatas.around.latitude}}" scale="{{globDatas.around.scale}}" markers="{{globDatas.around.markers}}" ></map>
+
+    <view class="tffic-list">
+        <view class="logbx ">
+            <image src="{{around.imgBussDistrict}}"></image>
+        </view>
+        <view class="descbx ">
+            <view class="tps">附近商圈</view>
+            <view class="minf" >{{globDatas.around.business.desc}}</view>
+        </view>
+        <view class="infobx ">
+            <view class="tps orage">{{globDatas.around.business.time}}</view>
+            <view class="minf" >{{globDatas.around.business.trafficaffic}}</view>
+        </view>
+    </view>
+    <view class="tffic-list">
+        <view class="logbx ">
+            <image src="{{around.imgHospital}}"></image>
+        </view>
+        <view class="descbx ">
+            <view class="tps">附近医院</view>
+            <view class="minf">{{globDatas.around.hospital.desc}}</view>
+        </view>
+        <view class="infobx ">
+            <view class="tps green">{{globDatas.around.hospital.time}}</view>
+            <view  class="minf" >{{globDatas.around.hospital.trafficaffic}}</view>
+        </view>
+    </view>
+     <view class="tffic-list">
+        <view class="logbx ">
+            <image src="{{around.imgSupMarket}}"></image>
+        </view>
+        <view class="descbx ">
+            <view class="tps">附近超市</view>
+            <view  class="minf" >{{globDatas.around.superMarket.desc}}</view>
+        </view>
+        <view class="infobx ">
+            <view class="tps spred">{{globDatas.around.superMarket.time}}</view>
+            <view class="minf">{{globDatas.around.superMarket.trafficaffic}}</view>
+        </view>
+    </view>
+    <view class="tffic-list">
+        <view class="logbx ">
+            <image src="{{around.imgVegMarket}}"></image>
+        </view>
+        <view class="descbx ">
+            <view class="tps">附近菜场</view>
+            <view  class="minf" >{{globDatas.around.foodMarket.desc}}</view>
+        </view>
+        <view class="infobx ">
+            <view class="tps blue">{{globDatas.around.foodMarket.time}}</view>
+            <view class="minf">{{globDatas.around.foodMarket.trafficaffic}}</view>
+        </view>
+    </view>
+
+</view>

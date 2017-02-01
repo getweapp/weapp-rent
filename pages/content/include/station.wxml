@@ -1,0 +1,53 @@
+<view class="pages2 pageContent  {{displayStyle[1]}}" animation="{{slideAnimation}}">
+    <image class="topImg" src="{{station.topImg}}"></image>
+    <view class="session">
+        <view class="session-items">
+                <view class="flexdm">
+                        <view class="labels">平均租金（元/㎡/月）</view>
+                        <view class="results">
+                             <view class="prices orage" > <text>{{globDatas.station.averagePrice}}</text>元</view>
+                        </view>
+                </view>
+                <view class="pricesDesc" >{{globDatas.station.averagePriceInfo}}</view> 
+        </view>
+
+        <view class="session-items">
+                <view class="title">租赁方式</view>
+
+                <view class="persentAll bgqings">
+                    <view class="persent bgblue" style="width:85%"></view>
+                </view>
+
+                <view class="legend">
+                    <view class="em bgblue"></view>{{globDatas.station.renttype.group}}合租
+                    <view class="em bgqings"></view>{{globDatas.station.renttype.full}}整租
+                </view>
+        </view>
+
+         <view class="session-items">
+                <view class="title">租赁方式</view>
+
+                <view class="persentAll bgPurple">
+                    <view class="persent bggreen leftBorder" style="width:{{globDatas.station.finish.higth}}"></view>
+                    <view class="persent bgorage rightBorder" style="width:{{globDatas.station.finish.norml}}"></view>
+                </view>
+
+                <view class="legend">
+                    <view class="em bggreen"></view>{{globDatas.station.finish.higth}}精装
+                    <view class="em bgorage"></view>{{globDatas.station.finish.norml}}普通装修
+                    <view class="em bgPurple"></view>{{globDatas.station.finish.simp}}毛坯
+                </view>
+        </view>
+        
+        <view class="session-items">
+                <view class="flexdm">
+                        <view class="labels">平均月支出</view>
+                        <view class="results">
+                             <view class="prices purple" > <text>{{globDatas.station.expend.totl}}</text>元</view>
+                             <view class="pricesDesc" >{{globDatas.station.expend.desc}}</view> 
+                        </view>
+                </view>
+        </view>
+
+    </view>
+</view>

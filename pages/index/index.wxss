@@ -1,0 +1,100 @@
+page{
+  background: #f7f7ff;
+}
+
+.topImg{
+  width: 704rpx; 
+  height: 182rpx;
+  margin-left: 21rpx;
+  position: relative;
+  margin-top: 50rpx;
+}
+
+.content{
+  width: 580rpx;
+  box-sizing: border-box;
+  margin: -21rpx auto;
+  background: #fff;
+  min-height: 400rpx;
+  padding: 50rpx 25rpx;
+  position: relative;
+  box-shadow: 0 0 20rpx 4rpx  #becee7;
+  border-radius: 10rpx;
+}
+.tips{
+   font-size: 24rpx;
+   background: #d9e8fb;
+   width: 446rpx;
+   color: #4178b0;
+   border-radius: 30rpx;
+   text-align: center;
+   height: 50rpx;
+   line-height: 50rpx;
+}
+.titImg{
+  width: 583rpx;
+  height: 124rpx;
+  position: relative;
+  margin-top: -35rpx;
+  margin-left: -28rpx;
+}
+
+.bomImg{
+   position: relative;
+   width: 731rpx;
+   height: 164rpx;
+   margin-left: 9rpx;
+   margin-top: 30rpx;
+}
+
+.session {
+  display:flex;
+  height: 120rpx;
+  line-height: 120rpx;
+}
+.sessoin-tit{
+  font-size: 26rpx;
+  color: #666666;
+  vertical-align: middle;
+  padding:0 15rpx;
+  width: 140rpx;
+}
+.session-val{
+  font-size: 26rpx;
+  color: #666666;
+  display: block;
+  line-height: 1;
+  width: 340rpx;
+  border-bottom: 1px solid #ddd;
+  margin-top: 32rpx;
+}
+.session-picker{
+  line-height: 1;
+  width: 340rpx;
+  border-bottom: 1px solid #ddd;
+  vertical-align: top;
+  height: 56rpx;
+  margin-top: 30rpx;
+}
+.session-picker .picker{
+  color: #666666;
+  font-size: 26rpx;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 15rpx;
+  width:100%;
+}
+
+.myBtn{
+   background-color:  #6994c3;
+   color: #fff;
+   font-size: 26rpx;
+   height: 88rpx;
+   line-height: 88rpx;
+   margin-top: 100rpx;
+}
+/** 修改button默认的点击态样式类**/
+.button-hover {
+  background-color:  #6994c3;
+  color: #fff;
+}

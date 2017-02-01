@@ -1,0 +1,62 @@
+<view class="pages3 pageContent {{displayStyle[2]}}" >
+
+    <view class="pageNav">
+        <view >
+            <image class="fromTo" src="{{traffic.fromTo}}"></image>
+        </view>
+        <view class="station">
+            <view class="begin">起始点：小区名称</view>
+            <view class="end">目的地：徐家汇商圈</view>
+        </view>
+        <view >
+            <view class="avgout">
+                <view class="prices">{{globDatas.traffic.pay}}RMB</view>
+                <view class="desc">月均交通支出</view>
+            </view>
+        </view>
+    </view>
+
+    <map class="maps" id="map1" longitude="{{globDatas.traffic.longitude}}" latitude="{{globDatas.traffic.latitude}}" scale="{{globDatas.traffic.scale}}" markers="{{globDatas.traffic.markers}}" ></map>
+
+
+    <view class="tffic-list">
+        <view class="logbx ">
+            <image src="{{traffic.imgCar}}"></image>
+        </view>
+        <view class="descbx ">
+            <view class="tps">自驾出行</view>
+            <view class="minf" >{{globDatas.traffic.taxi.pret}}的人选择自驾出行</view>
+        </view>
+        <view class="infobx ">
+            <view class="tps npurple">{{globDatas.traffic.taxi.time}} min</view>
+            <view class="minf" >{{globDatas.traffic.distance}} km</view>
+        </view>
+    </view>
+    <view class="tffic-list">
+        <view class="logbx ">
+            <image src="{{traffic.imgBus}}"></image>
+        </view>
+        <view class="descbx ">
+            <view class="tps">轨交出行</view>
+            <view class="minf">{{globDatas.traffic.bus.pret}}的人选择自驾出行</view>
+        </view>
+        <view class="infobx ">
+            <view class="tps green">{{globDatas.traffic.bus.time}} min</view>
+            <view  class="minf" >{{globDatas.traffic.distance}} km</view>
+        </view>
+    </view>
+     <view class="tffic-list">
+        <view class="logbx ">
+            <image src="{{traffic.imgSubway}}"></image>
+        </view>
+        <view class="descbx ">
+            <view class="tps">地铁出行</view>
+            <view  class="minf" >{{globDatas.traffic.subway.pret}}的人选择自驾出行</view>
+        </view>
+        <view class="infobx ">
+            <view class="tps blue">{{globDatas.traffic.subway.time}} min</view>
+            <view class="minf">{{globDatas.traffic.distance}} km</view>
+        </view>
+    </view>
+
+</view>

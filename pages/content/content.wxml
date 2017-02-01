@@ -1,0 +1,19 @@
+
+<include src="include/recommend.wxml"/>
+
+<include src="include/station.wxml"/>
+
+<include src="include/traffic.wxml"/>
+
+<include src="include/around.wxml"/>
+
+<include src="include/order.wxml"/>
+
+<scroll-view  class="bottom-nav " scroll-x="true">
+    <block  wx:for="{{[0,1,2,3,4]}}" wx:for-index="idx" wx:key="*this">
+        <view class="items scroll-view-item" data-numbers="{{idx}}"  bindtap="navPress">
+            <image class="{{navClass[idx]}}" src="{{navScr[idx]}}" ></image>
+            <view class="navText">{{navText[idx]}}</view>
+        </view>
+    </block>
+</scroll-view>

@@ -1,0 +1,31 @@
+<view class="pages1 pageContent  {{displayStyle[0]}}" animation="{{slideAnimation}}" >
+    <image class="tips" src="{{recommend.imgbx.tipsImg}}"></image>
+    <view class="view-modle">
+        <image class="showHt" src="{{globDatas.recommend.lpInfo.urlImg}}"></image>
+        <view class="info">
+            <view class="name"><text>{{globDatas.recommend.lpInfo.name}}</text></view>
+            <view class="price"><text>{{globDatas.recommend.lpInfo.price}}</text></view>
+        </view>
+    </view>
+
+    <view class="view-modle flex-modle">
+        <view class="items-Two">
+            <view class="comHeader">租客分析</view>
+            <image class="situationImg" src="{{globDatas.recommend.imgbx.situation.one}}"></image>
+            <view class="progress">
+                <progress percent="{{globDatas.recommend.custInfo.rent.persent}}" stroke-width="5" color="#009cff" />
+            </view>
+            <view class="percent blue">{{globDatas.recommend.custInfo.rent.persent}}%</view>
+            <view class="desc blue">{{globDatas.recommend.custInfo.rent.desc}}</view>
+        </view>
+        <view class="items-Two">
+            <view class="comHeader">小区人员情况</view>
+            <image class="situationImg" src="{{globDatas.recommend.imgbx.situation.two}}"></image>
+            <view class="progress">
+                <progress percent="{{globDatas.recommend.custInfo.area.persent}}" stroke-width="5" color="#ffae00" />
+            </view>
+            <view class="percent orage">{{globDatas.recommend.custInfo.area.persent}}%</view>
+            <view class="desc orage">{{globDatas.recommend.custInfo.area.desc}}</view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,62 @@
+<view class="pages5 pageContent  {{displayStyle[4]}}"  animation="{{slideAnimation}}" >
+    <image class="imgsign" src="{{order.imgSign}}"></image>
+    <image class="imgsign right" src="{{order.imgSign}}"></image>
+
+
+    <view class="starbx">
+            <view class="names">小区治安评级</view>
+            <view class="starflex">
+                <block wx:for="{{[1,2,3,4,5]}}" wx:for-item="i"  wx:key="*this">
+                    <block  wx:if="{{i <= globDatas.order.starLv}}">
+                        <image class="star" src="{{order.imgStar}}"></image>
+                    </block>
+                    <block wx:else>
+                         <image class="star" src="{{order.imgStarbg}}"></image>
+                    </block>
+                </block>   
+            </view>
+    </view>
+
+    <view class="orderList">
+        <view class="detalInfo">
+            <view class="title">
+                <view class="tix">安保措施</view>
+                <view class="em"></view>
+            </view>
+            <view class="desc">
+                <view class="li">
+                     <image class="imgli" src="{{order.imgLi}}"></image>
+                     <text>{{globDatas.order.security[0]}}</text>
+                </view>
+                <view class="li">
+                     <image class="imgli"  src="{{order.imgLi}}"></image>
+                     <text>{{globDatas.order.security[1]}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="imgInfo">
+            <image src="{{order.imgMonitor}}"></image>
+        </view>
+    </view>
+
+    <view class="orderList">
+        <view class="imgInfo">
+            <image src="{{order.imgSecurity}}"></image>
+        </view>
+       <view class="detalInfo">
+           <view class="title tr">
+                <view class="em flt"></view>
+                <view class="tix">盗窃率</view>
+            </view>
+            <view class="desc text-right">
+                <view class="li">
+                     <text>{{globDatas.order.steal[0]}}</text>
+                </view>
+                <view class="li">
+                     <text>{{globDatas.order.steal[1]}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+
+</view>
